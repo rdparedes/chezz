@@ -7,7 +7,8 @@ export type BoardState = {
 /**
  * Converts a board represented as a string to a BoardState.
  *
- * @param boardStr the board state represented as a string. Ex: "rnbqkbnr\npppppppp\n........\n........\n........\n........\nPPPPPPPP\nRNBQKBNR"
+ * @param boardStr the board state represented as a string.
+ * Ex: "rnbqkbnr\npppppppp\n........\n........\n........\n........\nPPPPPPPP\nRNBQKBNR"
  */
 export function toBoardState(boardStr: string): BoardState {
   const pieces = boardStr.split('').reduce((acc, char, index) => {
